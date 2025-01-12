@@ -126,7 +126,9 @@ const Parser = {
 
   generateDoc(html, response = {}) {
     return Resource.generateDoc({
-      body: html
+      body: html,
+      response,
+      alreadyDecoded: true
     });
   }
 };
