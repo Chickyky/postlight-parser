@@ -123,6 +123,12 @@ const Parser = {
   addExtractor(extractor) {
     return addCustomExtractor(extractor);
   },
+
+  generateDoc(html, response = {}) {
+    return Resource.generateDoc({
+      body: html
+    });
+  }
 };
 
 export default Parser;
