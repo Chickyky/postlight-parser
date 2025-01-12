@@ -128,9 +128,9 @@ const Parser = {
     return Resource.generateDoc({
       body: html,
       response,
-      alreadyDecoded: true
+      alreadyDecoded: false,
     });
-  }
+  },
 };
 
 export default Parser;
